@@ -1,0 +1,14 @@
+{{#unless fehler}}
+<h1>Hochgeladen von {{body.name}} aus {{body.ort}}</h1>
+
+<ul>
+  <li>Fieldname {{file.fieldname}}</li>
+  <li>Originaldateinamen {{file.originalname}}</li>
+  <li>Größe {{file.size}}</li>
+  <li>MIME-Type: {{file.mimetype}}</li>
+  <li>Pfad auf Server: {{file.path}}</li>
+</ul>
+{{/unless}}
+{{#if fehler}}
+<p>{{fehler}}</p>
+{{/if}}
